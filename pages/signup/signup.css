@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.navbar img {
+    width: 220px;
+}
+
+.btn-heart {
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    font-family: "Merriweather Sans", sans-serif !important;
+    font-size: 63px !important;
+}
+
+.text {
+    color: #364A15 !important;
+}
+
+.text-color {
+    color: #9A6C1D !important;
+}
+
+h2,
+span,
+p {
+    font-family: "Jost", sans-serif !important;
+}
+
+h2,
+span,
+p {
+    font-family: "Jost", sans-serif !important;
+}
+
+:hover input {
+    outline: none;
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login Page</title>
+    <link rel="stylesheet" href="../../pages/login/login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+</head>
+
+<body>
+    <nav class="bg-body-tertiary py-3">
+        <div class="container">
+            <div class="d-none d-lg-flex d-flex justify-content-between">
+                <div class="pt-2 d-flex">
+                    <div>
+                        <span class="fw-bold fs-3 text-secondary"><iconify-icon
+                                icon="flowbite:user-headset-outline"></iconify-icon></span>
+                    </div>
+                    <div class="mt-1 ms-3">
+                        <span class="fw-semibold text-secondary">+1-800-123-45-67</span>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <button class="btn d-flex" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                        aria-controls="offcanvasTop">
+                        <span class="fw-bold fs-2 me-2 pt-1 text-secondary">
+                            <iconify-icon icon="weui:search-outlined"></iconify-icon>
+                        </span>
+                        <span class="me-4 text-secondary fs-5 mt-2">Search</span>
+                    </button>
+                    <span class="fw-bold me-2 text-secondary"><iconify-icon
+                            icon="fa6-solid:user-group"></iconify-icon></span>
+                    <span class="me-4 mb-1 fs-5"><a href="../../pages/./signup/./signup.html"
+                            class="text-decoration-none text-secondary">Sign
+                            Up</a></span>
+                    <div class="dropdown">
+                        <button class="btn d-flex" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span class="fw-bold fs-5 me-1 pt-1 text-secondary">
+                                <iconify-icon icon="lineicons:world"></iconify-icon>
+                            </span>
+                            <span class="fs-5 text-secondary pt-0">English</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <span class="me-2 fw-bold"><iconify-icon
+                                            icon="twemoji:flag-for-flag-united-states"></iconify-icon></span>
+                                    English
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <span class="me-2"><iconify-icon
+                                            icon="twemoji:flag-for-flag-canada"></iconify-icon></span>
+                                    Canada
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <span class="me-2"><iconify-icon
+                                            icon="twemoji:flag-for-flag-pakistan"></iconify-icon></span>
+                                    Pakistan
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-expand-lg navbar-light my-3">
+                <div class="container-fluid">
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a href="../../index.html" class="text-decoration-none"><img class="img-fluid"
+                                    src="../../imgs/logo.png" alt="Logo"></a>
+                        </div>
+                        <ul class="d-flex justify-content-center align-items-center navbar-nav m-auto mb-2 mb-lg-0">
+                            <li class="nav-item ms-2">
+                                <a class="nav-link fs-5 text-color" href="../../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ms-3 fs-5 text-color" href="#">Pages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 text-color ms-3" href="#">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-color fs-5 mx-3" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-color fs-5" href="#">Element</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-color fs-5 mx-3" href="#">FAQ</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <a class="text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                role="button" aria-controls="offcanvasExample">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="d-flex me-3 pt-2">
+                                        <button class="btn btn-outline-secondary ">
+                                            <iconify-icon icon="uil:cart"></iconify-icon>
+                                            <span>$0.00 / 0 items</span>
+                                        </button>
+                                    </div>
+                            </a>
+                            <div class="pt-2">
+                                <button
+                                    class="btn btn-heart p-0 rounded-circle border-secondary d-flex justify-content-center align-items-center">
+                                    <iconify-icon icon="mdi:heart-outline" class="fs-3 text-secondary"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="d-flex justify-content-center align-items-center">
+        <div id="alertMessage" class="alert w-50 mt-5 d-flex justify-content-center align-items-center"></div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+        <h1 class="fs-1 text my-3">Login</h1>
+    </div>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6 mb-3 pb-3">
+                <h1 class="fs-4 text-color ms-1">Login</h1>
+                <form class="loginForm ms-1">
+                    <div class="flex-column">
+                        <div class="col-md-12">
+                            <label class="my-1 fs-5">Username or email address</label> <br>
+                            <input type="email" class="px-3 py-2 w-100" id="userEmail">
+                        </div>
+                        <div class="col-md-12 mt-3">
+                            <label class="py-2 fs-5 mt-1 pt-2">Password</label><br>
+                            <input type="password" class="px-3 py-2 w-100" id="userPassword"><br>
+                            <div class="mt-1 align-items-center justify-content-center">
+                                <input class="form-check-input custom-checkbox-size px-3 py-3" type="checkbox"
+                                    id="rememberMe">
+                                <label class="form-check-label fs-6 mt-2" for="rememberMe">
+                                    Remember me
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn bg-white btn-outline-secondary mt-3 px-4 py-3 text-secondary"
+                                type="submit">Log in</button>
+                        </div>
+                        <div class="mt-2">
+                            <button class="btn bg-white border-0 fs-5">Lost your password?</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-12 col-lg-6 col-sm-12">
+                <h1 class="fs-4 text-color">Register</h1>
+                <div class="border border-secondary p-3">
+                    <label class="my-1 mb-1 pb-1 fs-5 py-2 my-2 ">Username or email address</label> <br>
+                    <input type="text" class="px-3 py-2 w-100 my-2 mb-2">
+                    <p class="fs-5 text-secondary pt-3 ">A link to set a new password will be sent to your email
+                        address.
+                    </p>
+                    <p class="fs-5 text-secondary">Your personal data will be used to support your experience throughout
+                        this website, to manage access to your account, and for other purposes described in our privacy
+                        policy.</p>
+                    <div class="mb-3">
+                        <button class="btn bg-white btn-outline-secondary px-4 py-3 text-secondary">Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section -->
+    <footer class="bg-light py-5">
+        <div class="container">
+            <div class="row ms-2">
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                    <div class="d-flex flex-column align-items-start">
+                        <img src="../../imgs/logo.png" alt="Naturally Logo" class="w-50 w-md-25 w-sm-50">
+                        <div>
+                            <p class="text-secondary mt-3 fs-5">Lorem ipsum dolor sit amet, consectetur <br> adipiscing
+                                elit. Nulla
+                                nec nisi ac
+                                turpis <br> laoreet auctor sed sed turpis.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="fs-4 fs-5 text-secondary">Address</span><br>
+                        <p class="text-secondary fs-5">241 Devonshiren Street Lebanon, PA 17042</p>
+                        <span class="fs-5 text-secondary">Phone</span><br>
+                        <p class="text-secondary fs-5">+1-800-123-45-67</p>
+                        <span class="fs-4 fs-5 text-secondary">Email</span><br>
+                        <p class="text-secondary fs-5">sales@naturally.com</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <span class="mb-3 fs-3">Sign Up & Save</span>
+                    <p class="text-secondary fs-5 mt-2">Get exclusive offers, free shipping events & <br> more by
+                        signing up for
+                        our promotional <br>
+                        emails.</p>
+                    <div class="input-group mb-3 w-100">
+                        <input type="text" class="form-control py-2 bg-body-tertiary shadow-none"
+                            placeholder="Enter your e-mail address ...">
+                        <button class="btn btn-outline-secondary bg-secondary rounded-end-5 px-4" type="button">
+                            <span class="text-white"><iconify-icon icon="uit:telegram-alt"
+                                    class="fs-3"></iconify-icon></span>
+                        </button>
+                    </div>
+                    <span class="mt-4 fs-5">Follow us</span>
+                    <div class="d-flex mt-3 justify-content-start">
+                        <button class="btn btn-outline-secondary py-2 px-3 rounded-circle bg-secondary mx-2">
+                            <span class="text-white fs-5"><iconify-icon icon="brandico:facebook"
+                                    class="pt-1 pt-0 fs-3"></iconify-icon></span>
+                        </button>
+                        <button class="btn btn-outline-secondary py-2 rounded-circle bg-secondary mx-3">
+                            <span class="text-white fs-5"><iconify-icon icon="akar-icons:twitter-fill"
+                                    class="pt-1 pt-0 fs-3"></iconify-icon></span>
+                        </button>
+                        <button class="btn btn-outline-secondary py-2 rounded-circle bg-secondary mx-3">
+                            <span class="text-white fs-5"><iconify-icon icon="akar-icons:instagram-fill"
+                                    class="pt-1 pt-0 fs-3"></iconify-icon></span>
+                        </button>
+                        <button class="btn btn-outline-secondary py-2 rounded-circle bg-secondary mx-3">
+                            <span class="text-white fs-5"><iconify-icon icon="vaadin:youtube"
+                                    class="pt-1 pt-0 fs-3"></iconify-icon></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="col-12">
+                <div class="d-flex flex-column flex-sm-row justify-content-between mx-0">
+                    <div class="mb-2 d-flex justify-content-center">
+                        <p class="text-secondary tex-center mb-0">
+                            Naturally All rights reserved by Ninethme.
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="mx-2 text-decoration-none fw-semibold text-success">Privacy Policy</a>
+                        <a href="#" class="mx-2 text-decoration-none fw-semibold text-success">Shop</a>
+                        <a href="#" class="mx-2 text-decoration-none fw-semibold text-success">Blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-secondary" id="offcanvasExampleLabel">Your Cart</h5>
+            <button type="button" class="btn-close me-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body mt-4">
+            <span>No products in the cart </span>
+            <hr>
+            <div class="text-center mt-5">
+                <button class="btn btn-outline-secondary" type="button" data-bs-toggle="dropdown"> Start
+                    shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasTopLabel">Search</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <input type="text" class="form-control" placeholder="Type to search...">
+        </div>
+    </div>
+
+
+    <script src="/pages/login/login.js"></script>
+</body>
+
+</html>
